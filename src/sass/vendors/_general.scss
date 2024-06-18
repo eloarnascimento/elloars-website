@@ -1,0 +1,81 @@
+body {
+  color: #fff;
+  font-family: $main-font;
+  background-color: #000;
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: $main-color;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 20px;
+  font-family: $title-font;
+  line-height: 130%;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  color: $font-color;
+}
+
+h4,
+h5,
+h6 {
+  color: $font-color;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 21px;
+}
+
+h6 {
+  font-size: 20px;
+}
+.img-fluid {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.section {
+  &-title {
+    font-family: $title-font;
+    font-size: 22px;
+    margin-bottom: 70px;
+    color: rgba(#fff, 0.5);
+  }
+
+  @media (min-width: 1200px) {
+    &-title {
+      font-size: 28px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.bg {
+  &-container {
+    position: fixed;
+    top: 0;
+    opacity: 0.4;
+    overflow: hidden;
+    z-index: -1;
+    @include transition;
+    width: 100vw;
+    height: 100vh;
+  }
+}

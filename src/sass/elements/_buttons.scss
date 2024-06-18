@@ -1,0 +1,42 @@
+button,
+a,
+input[type='submit'] {
+  &.button {
+    position: relative;
+    @include flexCenter;
+    display: flex;
+    @include transition;
+    width: 100%;
+    max-width: 300px;
+    height: 48px;
+    border: 0;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(90deg, #5c30f7, #6649ff, #1f0b6a);
+    background: linear-gradient(90deg, #5c30f7, #6649ff, #1f0b6a);
+    text-align: center;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($main-color, 10%);
+    }
+
+    &-ghost {
+      background: transparent;
+      border: 1px solid $main-color;
+      color: $main-color;
+      &:hover {
+        background-color: rgba($main-color, 0.1);
+      }
+    }
+
+    @media (min-width: 768px) {
+      height: 46px;
+      padding: 0 50px;
+      font-size: 16px;
+    }
+  }
+}

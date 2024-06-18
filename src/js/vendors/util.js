@@ -1,0 +1,1 @@
+export const viewportMatches = width => window.matchMedia("(max-width: " + width + "px)").matches;

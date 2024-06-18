@@ -1,0 +1,45 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 100px 0 200px;
+
+  h1 {
+    font-size: clamp(20px, 6vw, 48px);
+    margin-bottom: 36px;
+    max-width: 1000px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+  }
+  h2 {
+    font-size: clamp(16px, 3vw, 24px);
+    margin: 0 auto 36px;
+    max-width: 700px;
+    font-family: $main-font;
+    color: rgba(#fff, 0.7);
+  }
+
+  &-buttons {
+    .button {
+      margin: 0 auto 15px;
+    }
+  }
+  @media (min-width: 768px) {
+    padding-top: 200px;
+    text-align: left;
+    h2 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &-buttons {
+      display: flex;
+      gap: 24px;
+      .button {
+        margin: 0;
+      }
+    }
+  }
+}

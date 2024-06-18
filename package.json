@@ -1,0 +1,40 @@
+{
+  "name": "elloars",
+  "version": "1.0.0",
+  "description": "Website (pt-BR)",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.1.2",
+    "cssnano": "^4.1.10",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^1.6.2",
+    "mini-svg-data-uri": "^1.2.3",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^8.3.1",
+    "postcss-preset-env": "^6.7.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "svgo-loader": "^3.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0"
+  },
+  "scripts": {
+    "start": "webpack -w",
+    "watch": "webpack --watch",
+    "build": "webpack --mode=production && npm run build:postcss",
+    "build:postcss": "postcss dist/style.css -d dist/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "gsap": "^3.6.1",
+    "imask": "^6.6.0-alpha.0",
+    "keen-slider": "^6.8.6"
+  }
+}

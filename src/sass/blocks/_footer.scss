@@ -1,0 +1,26 @@
+.footer {
+  padding: 30px 0;
+  &-main {
+    margin-bottom: 60px;
+  }
+  &-logo {
+    margin-bottom: 20px;
+  }
+  &-about {
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &-social {
+    margin-bottom: 40px;
+  }
+  @media (min-width: 768px) {
+    width: 100%;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
