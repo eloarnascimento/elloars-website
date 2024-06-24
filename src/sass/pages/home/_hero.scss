@@ -4,20 +4,31 @@
   justify-content: center;
   min-height: 100vh;
   text-align: center;
-  padding: 100px 0 200px;
+  padding: 200px 0;
 
   h1 {
     font-size: clamp(20px, 6vw, 48px);
-    margin-bottom: 36px;
-    max-width: 1000px;
+    margin-bottom: 20px;
+    max-width: 780px;
     text-transform: uppercase;
     color: #fff;
-    font-weight: 500;
+    span {
+      font-weight: 700;
+      // background: rgb(102, 73, 255);
+      // background: linear-gradient(
+      //   0deg,
+      //   rgba(102, 73, 255, 0.8) 12%,
+      //   rgba(172, 159, 226, 1) 30%,
+      //   rgba(255, 255, 255, 1) 60%
+      // );
+      // background-clip: text;
+      // -webkit-text-fill-color: transparent;
+    }
   }
   h2 {
-    font-size: clamp(16px, 3vw, 24px);
+    font-size: clamp(16px, 3vw, 20px);
     margin: 0 auto 36px;
-    max-width: 700px;
+    max-width: 600px;
     font-family: $main-font;
     color: rgba(#fff, 0.7);
   }
@@ -36,7 +47,7 @@
     }
     &-buttons {
       display: flex;
-      gap: 24px;
+      gap: 32px;
       .button {
         margin: 0;
       }

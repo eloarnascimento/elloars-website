@@ -266,7 +266,7 @@ input {
 }
 body {
   color: #fff;
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   background-color: #000;
 }
 
@@ -284,7 +284,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 20px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   line-height: 130%;
   font-weight: 400;
 }
@@ -332,14 +332,14 @@ h6 {
 }
 
 .section-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 22px;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
   margin-bottom: 70px;
   color: rgba(255, 255, 255, 0.5);
 }
 @media (min-width: 1200px) {
   .section-title {
-    font-size: 28px;
+    font-size: 22px;
   }
 }
 
@@ -357,11 +357,11 @@ input[type=submit].button {
   height: 48px;
   border: 0;
   border-radius: 10px;
-  background: -webkit-linear-gradient(90deg, #5c30f7, #6649ff, #1f0b6a);
-  background: linear-gradient(90deg, #5c30f7, #6649ff, #1f0b6a);
+  background-color: #6649ff;
+  letter-spacing: 1px;
   text-align: center;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
   font-size: 14px;
   color: #fff;
   cursor: pointer;
@@ -398,7 +398,7 @@ input[type=submit].button-ghost:hover {
   margin-bottom: 32px;
 }
 .form-field-label {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   font-size: 14px;
   letter-spacing: 0.5px;
   color: rgba(102, 73, 255, 0.3);
@@ -408,7 +408,7 @@ input[type=submit].button-ghost:hover {
   height: 48px;
   margin-bottom: 15px;
   padding-left: 10px;
-  border: 1px solid rgba(102, 73, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: #1b1b1d;
   border-radius: 10px;
   color: #fff;
@@ -419,7 +419,7 @@ input[type=submit].button-ghost:hover {
   border-color: #6649ff;
 }
 .form-field-input::placeholder, .form-field-textarea::placeholder {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   color: rgba(255, 255, 255, 0.2);
 }
 .form-field-textarea {
@@ -436,14 +436,11 @@ input[type=submit].button-ghost:hover {
   cursor: pointer;
   margin: 0 auto;
 }
-.form-field-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-}
 
 .bg-container {
   position: fixed;
   top: 0;
-  opacity: 0.4;
+  opacity: 0.5;
   overflow: hidden;
   z-index: -1;
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -457,9 +454,8 @@ input[type=submit].button-ghost:hover {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 20px 10px;
+  padding: 30px 10px;
   z-index: 11;
-  box-shadow: 0, 0, 10px, 10px #6649ff;
 }
 .header-menu {
   display: flex;
@@ -501,17 +497,14 @@ input[type=submit].button-ghost:hover {
 .header-trigger {
   position: relative;
   cursor: pointer;
-  padding: 12px 10px;
-  border-radius: 20px;
   z-index: 10;
-  backdrop-filter: blur(4px);
-  box-shadow: 0 0 3px 3px rgba(102, 73, 255, 0.3);
 }
 .header-trigger div {
   height: 2px;
+  border-radius: 2px;
 }
 .header-trigger div:first-child {
-  width: 20px;
+  width: 10px;
   background-color: #fff;
 }
 .header-trigger div:nth-child(2) {
@@ -520,13 +513,14 @@ input[type=submit].button-ghost:hover {
   background-color: #fff;
 }
 .header-trigger div:last-child {
-  width: 20px;
+  width: 10px;
   margin-top: 5px;
+  margin-left: auto;
   background-color: #fff;
 }
 @media (min-width: 1200px) {
   .header {
-    padding: 20px;
+    padding: 30px;
   }
   .header .container {
     max-width: 1600px;
@@ -550,8 +544,9 @@ input[type=submit].button-ghost:hover {
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 40px;
+    gap: 50px;
     font-size: 16px;
+    margin-right: 0;
   }
   .header-menu .menu-item {
     margin-bottom: 0;
@@ -563,29 +558,20 @@ input[type=submit].button-ghost:hover {
 }
 
 .footer {
-  padding: 30px 0;
+  padding: 30px 10px;
 }
 .footer-main {
-  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
 }
-.footer-logo {
-  margin-bottom: 20px;
-}
-.footer-about p {
-  font-size: 16px;
-  line-height: 24px;
-}
-.footer-social {
-  margin-bottom: 40px;
-}
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .footer {
+    padding-left: 30px;
+    padding-right: 30px;
     width: 100%;
   }
-  .footer .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .footer-main {
+    justify-content: flex-end;
   }
 }
 
@@ -595,21 +581,23 @@ input[type=submit].button-ghost:hover {
   justify-content: center;
   min-height: 100vh;
   text-align: center;
-  padding: 100px 0 200px;
+  padding: 200px 0;
 }
 .hero h1 {
   font-size: clamp(20px, 6vw, 48px);
-  margin-bottom: 36px;
-  max-width: 1000px;
+  margin-bottom: 20px;
+  max-width: 780px;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 500;
+}
+.hero h1 span {
+  font-weight: 700;
 }
 .hero h2 {
-  font-size: clamp(16px, 3vw, 24px);
+  font-size: clamp(16px, 3vw, 20px);
   margin: 0 auto 36px;
-  max-width: 700px;
-  font-family: "Lato", sans-serif;
+  max-width: 600px;
+  font-family: "Roboto Flex", sans-serif;
   color: rgba(255, 255, 255, 0.7);
 }
 .hero-buttons .button {
@@ -626,7 +614,7 @@ input[type=submit].button-ghost:hover {
   }
   .hero-buttons {
     display: flex;
-    gap: 24px;
+    gap: 32px;
   }
   .hero-buttons .button {
     margin: 0;
@@ -644,14 +632,15 @@ input[type=submit].button-ghost:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 .about-content p {
   max-width: 1130px;
   text-align: center;
   font-size: 24px;
-  font-weight: 700;
   letter-spacing: 1.5px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 700;
 }
 .about-content p span {
   color: rgba(255, 255, 255, 0.5);
@@ -659,12 +648,10 @@ input[type=submit].button-ghost:hover {
 .about-content .colored {
   color: #ffffff;
 }
-.about-skills {
-  margin: 100px 0 0;
-}
 .about-skills-list {
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  gap: 15px;
   flex-wrap: wrap;
 }
 .about-skills-item {
@@ -677,40 +664,38 @@ input[type=submit].button-ghost:hover {
   border: 2px solid #6649ff;
   width: fit-content;
   padding: 10px 15px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   font-weight: 600;
   border-radius: 10px;
 }
+.about-skills-item svg {
+  margin-right: 5px;
+}
 .about-skills-item:hover {
-  border-color: #fff;
-  color: #fff;
+  backdrop-filter: blur(2px);
+  box-shadow: 0px 0px 5px 5px rgba(102, 73, 255, 0.75);
 }
 @media (min-width: 768px) {
   .about-content {
     align-items: center;
+    margin-bottom: 50px;
   }
   .about-content p {
-    font-size: 32px;
-  }
-  .about-skills-list {
-    display: grid;
-    grid-template-columns: 500px 500px;
-    justify-content: center;
+    font-size: 36px;
   }
 }
 
 .projects {
-  padding-bottom: 100px;
+  padding: 150px 0;
 }
 .projects-item {
   max-width: 300px;
   width: 100%;
   margin: 0 auto 30px;
-  padding: 40px 20px;
+  padding: 30px 20px;
   border: 1px solid #6649ff;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px);
+  background-color: #1a1a1a;
 }
 .projects-item-title {
   display: flex;
@@ -735,8 +720,9 @@ input[type=submit].button-ghost:hover {
   background-color: #4825ff;
 }
 .projects-item p {
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.3);
+  font-family: "Roboto Mono", sans-serif;
 }
 .projects-icons {
   display: flex;
@@ -783,7 +769,6 @@ input[type=submit].button-ghost:hover {
     bottom: 60px;
   }
   .projects-item p {
-    font-size: 16px;
     transform: translateY(60%);
     opacity: 0;
     position: relative;
@@ -807,7 +792,7 @@ input[type=submit].button-ghost:hover {
 }
 
 .home-contact {
-  padding-bottom: 30px;
+  padding: 120px 0 40px;
 }
 .home-contact .section-title {
   text-align: center;
@@ -815,12 +800,12 @@ input[type=submit].button-ghost:hover {
 }
 .home-contact-bg {
   background-color: #000;
-  box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 40px 0;
 }
 .home-contact-form {
-  max-width: 400px;
+  max-width: 350px;
   margin: 50px auto 0;
   padding: 0 10px;
 }
@@ -836,25 +821,22 @@ input[type=submit].button-ghost:hover {
   display: flex;
   align-items: center;
   padding: 10px;
-  color: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 0px 1px 3px rgba(102, 73, 255, 0.7);
-  border-radius: 5px;
+  color: #6649ff;
+  border: 1px solid #6649ff;
+  box-shadow: 0px 0px 3px 0 rgba(102, 73, 255, 0.7);
+  border-radius: 10px;
+  font-size: 14px;
   cursor: pointer;
+}
+.home-contact-buttons a svg path {
+  fill: #6649ff;
 }
 .home-contact-buttons a span {
   display: none;
-}
-.home-contact-buttons a i {
-  font-size: 24px;
+  font-weight: 700;
 }
 .home-contact-buttons a:hover {
-  border-color: #6649ff;
-  color: #6649ff;
-}
-.home-contact-buttons a:hover svg path {
-  fill: #6649ff;
-  fill-opacity: 1;
+  background-color: rgba(102, 73, 255, 0.1);
 }
 @media (min-width: 1024px) {
   .home-contact .section-title {
@@ -882,10 +864,10 @@ input[type=submit].button-ghost:hover {
     text-align: start;
     align-items: center;
     margin: 0;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
   .home-contact-buttons a {
-    width: 290px;
+    width: 280px;
     position: relative;
     padding: 15px;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);

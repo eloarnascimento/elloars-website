@@ -1,26 +1,17 @@
 .footer {
-  padding: 30px 0;
+  padding: 30px 10px;
+
   &-main {
-    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
   }
-  &-logo {
-    margin-bottom: 20px;
-  }
-  &-about {
-    p {
-      font-size: 16px;
-      line-height: 24px;
-    }
-  }
-  &-social {
-    margin-bottom: 40px;
-  }
-  @media (min-width: 768px) {
+
+  @media (min-width: 1200px) {
+    padding-left: 30px;
+    padding-right: 30px;
     width: 100%;
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    &-main {
+      justify-content: flex-end;
     }
   }
 }

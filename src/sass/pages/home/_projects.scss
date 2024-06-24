@@ -1,14 +1,13 @@
 .projects {
-  padding-bottom: 100px;
+  padding: 150px 0;
   &-item {
     max-width: 300px;
     width: 100%;
     margin: 0 auto 30px;
-    padding: 40px 20px;
+    padding: 30px 20px;
     border: 1px solid $main-color;
     border-radius: 20px;
-    background-color: rgba(#fff, 0.1);
-    backdrop-filter: blur(4px);
+    background-color: #1a1a1a;
     &-title {
       display: flex;
       align-items: center;
@@ -33,8 +32,9 @@
     }
 
     p {
-      font-size: 16px;
+      font-size: 14px;
       color: rgba(#ffffff, 0.3);
+      font-family: $about-font;
     }
   }
   &-icons {
@@ -81,7 +81,6 @@
         }
       }
       p {
-        font-size: 16px;
         transform: translateY(60%);
         opacity: 0;
         position: relative;
