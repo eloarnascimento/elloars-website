@@ -1,0 +1,79 @@
+
+# Created by https://www.gitignore.io/api/macos,wordpress
+# Edit at https://www.gitignore.io/?templates=macos,wordpress
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+.vscode/
+
+### Plugins 
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### WordPress ###
+
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory
+wp-includes/
+wp-admin/
+.htaccess
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-config.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+wflogs/
+
+# ignore these plugins
+dist/wp-content/plugins/hello.php
+dist/wp-content/plugins/akismet/
+
+
+# ignore specific themes
+dist/wp-content/themes/twenty*/
+
+# ignore node dependency directories
+node_modules/
+
+# ignore log files and databases
+*.log
+#*.sql
+*.sqlite
+**/*/.DS_Store
+
+# ignore directories
+package-lock.json
