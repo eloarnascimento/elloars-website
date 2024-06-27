@@ -1,12 +1,9 @@
 .bg {
   &-container {
     position: fixed;
-    top: 0;
+    top: 10px;
+    left: 20;
     opacity: 0.5;
-    overflow: hidden;
     z-index: -1;
-    @include transition;
-    width: 100vw;
-    height: 100vh;
   }
 }

@@ -1,10 +1,5 @@
 export class MailSender {
-  constructor(
-    form,
-    body,
-    url,
-    response
-  ) {
+  constructor(form, body, url, response) {
     this.form = form;
     this.body = body;
     this.url = url;
@@ -14,21 +9,23 @@ export class MailSender {
   submit(e) {
     e.preventDefault();
 
-    if (this.response)
-      this.response.style.display = 'flex'
-      this.response.innerHTML = "Enviando! Aguarde..."
+    if (this.response) this.response.style.display = 'flex';
+    this.response.style.marginBottom = '20px';
+    this.response.innerHTML = 'Enviando! Aguarde...';
 
-    fetch(this.url,
-      {
-        method: 'POST',
-        body: new FormData(this.form)
-      }).then(res => {
+    fetch(this.url, {
+      method: 'POST',
+      body: new FormData(this.form),
+    })
+      .then((res) => {
         if (this.response)
-          this.response.innerHTML = "<i class='fa fa-check-circle'></i> Tudo certo! E-mail enviado."
+          this.response.innerHTML =
+            "<i class='fa fa-check-circle'></i> Tudo certo! E-mail enviado.";
       })
-      .catch(err => {
+      .catch((err) => {
         if (this.response)
-          this.response.innerHTML = "<i class='fa fa-times-circle'></i> Algo deu errado. Atualize a página e tente novamente."
-      })
+          this.response.innerHTML =
+            "<i class='fa fa-times-circle'></i> Algo deu errado. Atualize a página e tente novamente.";
+      });
   }
 }

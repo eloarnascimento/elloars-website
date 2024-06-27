@@ -11,7 +11,6 @@ import { initHeader } from './modules/header';
 import { initMessageClose, initMessageExpand } from './modules/message.js';
 import { initBackground } from './modules/background.js';
 import { initAbout } from './modules/about.js';
-import { initAboutSkills } from './modules/skills.js';
 import { initContact } from './modules/contact.js';
 import { initAnimations } from './modules/animations.js';
 

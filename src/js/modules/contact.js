@@ -19,6 +19,7 @@ export const initContact = () => {
 
     contactForm.addEventListener('submit', (e) => {
       contactFormSend.submit(e);
+      contactForm.reset();
     });
   }
 };
